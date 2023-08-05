@@ -1,4 +1,3 @@
-# 自用规则分流
 host-suffix, liangzipic.com, 国际媒体
 host-suffix, imgffzy.com, 国际媒体
 host-suffix, taopianapi.com, 国际媒体
