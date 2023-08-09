@@ -35,16 +35,17 @@ host-suffix, thetvdb.com, 国际媒体
 host-suffix, bfvvs.com, 国际媒体
 host-suffix, cdn.venus7202.com, 国际媒体
 host-suffix, cdn.ceres9350.com, 国际媒体
+host-suffix, v.ddys.zip, 国际媒体
+host-suffix, v.ddys.pro, 国际媒体
+host-suffix, ddys.art, 国际媒体
 host-suffix, feisuzyapi.com, direct
 host-suffix, kczyapi.com, direct
 host-suffix, guangsuapi.com, direct
 host-suffix, taopian.org, direct
 host-suffix, xinlangapi.com, direct
 host-suffix, guangsuzy.com, direct
-host-suffix, v.ddys.zip, direct
-host-suffix, v.ddys.pro, direct
-host-suffix, ddys.art, direct
 host-suffix, mixpanel.com, direct
+
 # > IPhone
 host-suffix, hsforms.com, 美国节点
 host-suffix, anthropic.com, 美国节点
