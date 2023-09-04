@@ -1,0 +1,5 @@
+prepend-rules:
+  - DOMAIN-SUFFIX,deepl.com,🚀 国外流量
+  - DOMAIN-SUFFIX,v2ex.com,🚀 国外流量
+  - DOMAIN-SUFFIX,distill.pub,🚀 国外流量
+  - DOMAIN-SUFFIX,insidevoa.com,🚀 国外流量
