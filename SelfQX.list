@@ -63,7 +63,6 @@ host-suffix, api.avo.app, 美国节点
 host-suffix, cloudfront.net, 香港节点
 host-suffix, picsart.com, 香港节点
 host-suffix, replicate.com, 美国节点
-host-suffix, dream.ai, 美国节点
 host-suffix, cloudfunctions.net, 美国节点
 host-suffix, hayocdn.com, direct
 host-suffix, discordapp.com, 美国节点
@@ -72,12 +71,12 @@ host-suffix, discordapp.net, 美国节点
 host-suffix, discordapp.net, 美国节点
 host-suffix, discord.com, 美国节点
 host-suffix, languagepro.app, direct
-host-suffix, ghelper.me, 手动选择
 host-suffix, hayoapp.com, direct
 host-suffix, characterai.io, 香港节点
 host-suffix, character.ai, 香港节点
 host-suffix, us-central1-genzart-prod.cloudfunctions.net, 美国节点
 host-suffix, diffusitron.ngrok.io, 美国节点
 host-suffix, discord.gg, 美国节点
+host-suffix, dream.ai, 美国节点
 host-suffix, wombo.art, 美国节点
 host-suffix, wombo.ai, 美国节点
