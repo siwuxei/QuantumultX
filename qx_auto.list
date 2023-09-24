@@ -1,4 +1,4 @@
-host-suffix, quantumult.app
-host-suffix, jyzyapi.com
-host-suffix, bfzypic.com
-host-suffix, cloudflare.com
+DOMAIN-SUFFIX, quantumult.app
+DOMAIN-SUFFIX, jyzyapi.com
+DOMAIN-SUFFIX, bfzypic.com
+DOMAIN-SUFFIX, cloudflare.com
