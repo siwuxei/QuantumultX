@@ -1,6 +1,6 @@
-host-suffix, freeview.ml
-host-suffix, poe.com
-host-suffix, cloudfront.net
-host-suffix, picsart.com
-host-suffix, characterai.io
-host-suffix, character.ai
+DOMAIN-SUFFIX, freeview.ml
+DOMAIN-SUFFIX, poe.com
+DOMAIN-SUFFIX, cloudfront.net
+DOMAIN-SUFFIX, picsart.com
+DOMAIN-SUFFIX, characterai.io
+DOMAIN-SUFFIX, character.ai
