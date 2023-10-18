@@ -5,7 +5,6 @@ DOMAIN-SUFFIX, akamaihd.net
 DOMAIN-SUFFIX, steamstatic.com
 DOMAIN-SUFFIX, steampowered.com
 DOMAIN-SUFFIX, replicate.com
-DOMAIN-SUFFIX, cloudfunctions.net
 DOMAIN-SUFFIX, hsforms.com
 DOMAIN-SUFFIX, anthropic.com
 DOMAIN-SUFFIX, discordapp.com
@@ -13,6 +12,5 @@ DOMAIN-SUFFIX, discord.media
 DOMAIN-SUFFIX, discordapp.net
 DOMAIN-SUFFIX, discordapp.net
 DOMAIN-SUFFIX, discord.com
-DOMAIN-SUFFIX, us-central1-genzart-prod.cloudfunctions.net
 DOMAIN-SUFFIX, diffusitron.ngrok.io
 DOMAIN-SUFFIX, discord.gg
