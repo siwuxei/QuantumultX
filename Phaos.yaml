@@ -68,9 +68,9 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
       - DIRECT
-  - name: 🚀 手动切换1
+  - name: 🚀 手动切换
     type: select
     proxies:
       - 距离下次重置剩余：12 天
@@ -175,7 +175,7 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -186,7 +186,7 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
     proxies:
@@ -197,7 +197,7 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -208,7 +208,7 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -219,7 +219,7 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
     proxies:
@@ -230,13 +230,13 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -247,7 +247,7 @@ proxy-groups:
       - 🇨🇳 台湾自动
       - 🇸🇬 狮城自动
       - 🇯🇵 日本自动
-      - 🚀 手动切换1
+      - 🚀 手动切换
   - name: 🇺🇲 美国自动
     type: url-test
     url: http://www.gstatic.com/generate_204
