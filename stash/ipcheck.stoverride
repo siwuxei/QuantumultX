@@ -1,5 +1,6 @@
 name: IP 信息 Tile 面板
 desc: 用于显示 IP 信息的面板 (Stash 2.0)
+https://github.com/Toperlock/Quantumult/blob/main/icon/Doraemon/Doraemon-1070.png
 # https://raw.githubusercontent.com/psychopasss/ss_rule/main/Stash/override/embyUnlock.stoverride
 
 tiles:
