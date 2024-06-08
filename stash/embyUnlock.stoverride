@@ -1,5 +1,6 @@
 name: Emby Unlock
 desc: 解锁Emby会员功能, 无通知
+# https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Stash/Script/CamScanner.stoverride
 
 http:
   mitm:
