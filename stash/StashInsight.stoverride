@@ -2,7 +2,7 @@ name: Stash Insight
 desc: >-
   本模块提供全面的Stash流量分析及规则优化建议，包含一个面板组件+网页分析报告+json API。
   启用此模块后访问 http://clash.insight:9090/html 查看分析报告；访问 http://clash.insight:9090/json 获取API数据
-icon: https://github.com/Toperlock/Quantumult/blob/main/icon/Doraemon/Doraemon-1035.png
+icon: https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1051.png
 # https://raw.githubusercontent.com/StevenKwan/stash-waffle/main/ipcheck.stoverride
 
 external-controller: '127.0.0.1:9090'
