@@ -1,6 +1,6 @@
 name: Emby Unlock
 desc: 解锁Emby会员功能, 无通知
-icon: https://github.com/Toperlock/Quantumult/blob/main/icon/Doraemon/Doraemon-1068.png
+icon: https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1068.png
 # https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Stash/Script/CamScanner.stoverride
 
 http:
