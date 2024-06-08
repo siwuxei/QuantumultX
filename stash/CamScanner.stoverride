@@ -1,6 +1,6 @@
 name: 扫描全能王
 desc: 解锁扫描全能王会员
-icon: https://github.com/Toperlock/Quantumult/blob/main/icon/Doraemon/Doraemon-1020.png
+icon: https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1021.png
 # https://raw.githubusercontent.com/RS0485/network-rules/main/rewrite/StashInsight.stoverride
 
 http:
