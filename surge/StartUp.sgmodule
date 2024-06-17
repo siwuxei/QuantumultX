@@ -5,6 +5,9 @@
 # > 京东启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 
+# > 天翼云盘
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners\.action\?.*,REJECT-TINYGIF
+
 [Map Local]
 # > 阿里巴巴
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ data-type=text data=" " status-code=200
@@ -14,9 +17,6 @@ URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-
 
 # > 网易云
 ^https?:\/\/interface(\d)?.music.163.com\/eapi\/ad\/ data-type=text data=" " status-code=200
-
-# > 天翼云盘
-^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners\.action\?.* data-type=text data=" " status-code=200
 
 [Script]
 # > 知乎
