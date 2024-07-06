@@ -87,6 +87,7 @@ const mapping = {
   'Happy%3ADays': ['pro', 'happy_999_lifetime'],
   'PDF_convertor/': ['VIP', 'com.pdf.convertor.forever'],
   'ChatGPTApp': ['Advanced'],
+  'APTV': ['pro'],
   'TouchRetouchBasic': ['premium'],
   'My%20Jump%20Lab': ['lifetime'],
   '%E7%9B%AE%E6%A0%87%E5%9C%B0%E5%9B%BE': ['pro'],
