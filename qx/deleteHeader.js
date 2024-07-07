@@ -11,21 +11,5 @@
 
 const version = 'V1.0.2';
 
-// 定义一个函数来设置或更新头部字段的值
-function setHeaderValue(headers, fieldName, value) {
-    var lowerCaseFieldName = fieldName.toLowerCase();
-    if (lowerCaseFieldName in headers) {
-        headers[lowerCaseFieldName] = value;
-    } else {
-        headers[fieldName] = value;
-    }
-}
 
-// 获取请求的头部信息
-var modifiedHeaders = $request.headers;
-
-// 设置或更新 "X-RevenueCat-ETag" 字段的值为一个空字符串
-setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
-
-// 返回修改后的头部信息
-$done({headers: modifiedHeaders});
+function setHeaderValue(e,a,d){var r=a.toLowerCase();r in e?e[r]=d:e[a]=d}var modifiedHeaders=$request.headers;setHeaderValue(modifiedHeaders,"X-RevenueCat-ETag",""),$done({headers:modifiedHeaders});
