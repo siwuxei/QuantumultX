@@ -11,10 +11,6 @@
 
 const version = 'V1.0.2';
 
-[rewrite_local]
-# ～ RevenueCat@ddgksf2013
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/siwuxei/QuantumultX/main/qx/deleteHeader.js
-
 // ========= 动态ID ========= //
 const mapping = {
   '%E8%BD%A6%E7%A5%A8%E7%A5%A8': ['vip+watch_vip'],
@@ -175,7 +171,7 @@ const mapping = {
 };
 
 // =========    固定部分  ========= // 
-var ua=$request.headers["User-Agent"]||$request.headers["user-agent"];
+var ua=$request.headers["User-Agent"]||$request.headers["user-agent"],obj=JSON.parse($response.body);
 const match = Object.keys(mapping).find(e => ua.includes(e));
 
 // 定义一个函数来设置或更新头部字段的值
