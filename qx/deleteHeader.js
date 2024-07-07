@@ -11,5 +11,16 @@
 
 const version = 'V1.0.2';
 
+function setHeaderValue(headers, fieldName, value) {
+    var lowerCaseFieldName = fieldName.toLowerCase();
+    if (lowerCaseFieldName in headers) {
+        headers[lowerCaseFieldName] = value;
+    } else {
+        headers[fieldName] = value;
+    }
+}
 
-function setHeaderValue(e,a,d){var r=a.toLowerCase();r in e?e[r]=d:e[a]=d}var modifiedHeaders=$request.headers;setHeaderValue(modifiedHeaders,"X-RevenueCat-ETag",""),$done({headers:modifiedHeaders});
+var modifiedHeaders = $request.headers;
+setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
+
+$done({ headers: modifiedHeaders });
