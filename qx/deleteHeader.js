@@ -23,4 +23,5 @@ function setHeaderValue(headers, fieldName, value) {
 var modifiedHeaders = $request.headers;
 setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
 
+console.log("Hello, modifiedHeaders!");
 $done({headers: modifiedHeaders});
