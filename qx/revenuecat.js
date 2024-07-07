@@ -228,6 +228,10 @@ const match = Object.keys(mapping).find(e => ua.includes(e));
 if (match) {
     let [e, s] = mapping[match];
     console.log("The app is:" + match);
+    console.log("The app is:" + e);
+    console.log("The app is:" + s);
+    console.log("The app is:" + mapping[match]);
+  
     if (s) {
         ddgksf2021.product_identifier = s;
         obj.subscriber.subscriptions[s] = ddgksf2013;
