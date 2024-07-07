@@ -23,14 +23,13 @@ function setHeaderValue(headers, fieldName, value) {
 var modifiedHeaders = $request.headers;
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
 
-if (ua.includes("Fiery")) {
-    console.log("User-Agent contains 'Fiery'");
-} else {
-    console.log("User-Agent does not contain 'Fiery'");
-}
+// Array of keywords to check
+var keywords = ["Fileball"];
 
-console.log(ua);
-setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
+// Check if the user-agent does not contain any of the keywords
+if (!keywords.some(keyword => ua.includes(keyword))) {
+    setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
+}
 
 console.log("DeleteHeader Completion!");
 $done({headers: modifiedHeaders});
