@@ -21,6 +21,7 @@ function setHeaderValue(headers, fieldName, value) {
 }
 
 var modifiedHeaders = $request.headers;
+console.log(modifiedHeaders);
 setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
 
 console.log("DeleteHeader Completion!");
