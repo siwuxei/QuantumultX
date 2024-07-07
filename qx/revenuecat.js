@@ -226,6 +226,7 @@ var ddgksf2021 = {
 const match = Object.keys(mapping).find(e => ua.includes(e));
 
 if (match) {
+    $notify('Match Result', '', match);
     let [e, s] = mapping[match];
     if (s) {
         ddgksf2021.product_identifier = s;
