@@ -30,8 +30,6 @@ hostname=api.revenuecat.com
 ***********************************/
 
 
-
-
 // ========= 动态ID ========= //
 const mapping = {
   '%E8%BD%A6%E7%A5%A8%E7%A5%A8': ['vip+watch_vip'],
@@ -192,6 +190,51 @@ const mapping = {
   'Wozi': ['wozi_pro_2023']
 };
 
+
 // =========    固定部分  ========= // 
 // =========  @ddgksf2021 ========= // 
-var ua=$request.headers["User-Agent"]||$request.headers["user-agent"],obj=JSON.parse($response.body);obj.Attention="恭喜你抓到元数据！由墨鱼分享，请勿售卖或分享他人！";var ddgksf2013={is_sandbox:!1,ownership_type:"PURCHASED",billing_issues_detected_at:null,period_type:"normal",expires_date:"2099-12-18T01:04:17Z",grace_period_expires_date:null,unsubscribe_detected_at:null,original_purchase_date:"2022-09-08T01:04:18Z",purchase_date:"2022-09-08T01:04:17Z",store:"app_store"},ddgksf2021={grace_period_expires_date:null,purchase_date:"2022-09-08T01:04:17Z",product_identifier:"com.ddgksf2013.premium.yearly",expires_date:"2099-12-18T01:04:17Z"};const match=Object.keys(mapping).find(e=>ua.includes(e));if(match){let[e,s]=mapping[match];s?(ddgksf2021.product_identifier=s,obj.subscriber.subscriptions[s]=ddgksf2013):obj.subscriber.subscriptions["com.ddgksf2013.premium.yearly"]=ddgksf2013,obj.subscriber.entitlements[e]=ddgksf2021}else obj.subscriber.subscriptions["com.ddgksf2013.premium.yearly"]=ddgksf2013,obj.subscriber.entitlements.pro=ddgksf2021;$done({body:JSON.stringify(obj)});
+
+// 获取请求的 User-Agent 和响应的 body
+var ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
+var obj = JSON.parse($response.body);
+
+// 添加提示信息到响应的 body
+obj.Attention = "恭喜你抓到元数据！由墨鱼分享，请勿售卖或分享他人！";
+
+// 定义一些常量
+var ddgksf2013 = {
+    is_sandbox: false,
+    ownership_type: "PURCHASED",
+    billing_issues_detected_at: null,
+    period_type: "normal",
+    expires_date: "2099-12-18T01:04:17Z",
+    grace_period_expires_date: null,
+    unsubscribe_detected_at: null,
+    original_purchase_date: "2022-09-08T01:04:18Z",
+    purchase_date: "2022-09-08T01:04:17Z",
+    store: "app_store"
+};
+
+var ddgksf2021 = {
+    grace_period_expires_date: null,
+    purchase_date: "2022-09-08T01:04:17Z",
+    product_identifier: "com.ddgksf2013.premium.yearly",
+    expires_date: "2099-12-18T01:04:17Z"
+};
+
+// 检查 User-Agent 是否包含 mapping 对象中的任何键
+const match = Object.keys(mapping).find(e => ua.includes(e));
+
+if (match) {
+    let [e, s] = mapping[match];
+    if (s) {
+        ddgksf2021.product_identifier = s;
+        obj.subscriber.subscriptions[s] = ddgksf2013;
+    } else {
+        obj.subscriber.subscriptions["com.ddgksf2013.premium.yearly"] = ddgksf2013;
+    }
+    obj.subscriber.entitlements[e] = ddgksf2021;
+}
+
+// 返回修改后的响应 body
+$done({body: JSON.stringify(obj)});
