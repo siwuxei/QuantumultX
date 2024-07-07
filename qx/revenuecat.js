@@ -195,7 +195,7 @@ const mapping = {
 // =========  @ddgksf2021 ========= // 
 var ua=$request.headers["User-Agent"]||$request.headers["user-agent"],obj=JSON.parse($response.body);
 
-obj.Attention="恭喜你抓到元数据！由墨鱼分享，请勿售卖或分享他人！";
+// obj.Attention="恭喜你抓到元数据！由墨鱼分享，请勿售卖或分享他人！";
 
 var ddgksf2013 = {
     is_sandbox:!1,
