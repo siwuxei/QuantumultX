@@ -175,7 +175,7 @@ const mapping = {
 };
 
 // =========    固定部分  ========= // 
-var ua=$request.headers["User-Agent"]||$request.headers["user-agent"],obj=JSON.parse($response.body);
+var ua=$request.headers["User-Agent"]||$request.headers["user-agent"];
 const match = Object.keys(mapping).find(e => ua.includes(e));
 
 // 定义一个函数来设置或更新头部字段的值
