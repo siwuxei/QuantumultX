@@ -29,7 +29,7 @@ var keywords = ["Fileball"];
 // Check if the user-agent does not contain any of the keywords
 if (!keywords.some(keyword => ua.includes(keyword))) {
     setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
-    console.log("The App is:" + ua);
+    // console.log("The App is:" + ua);
 }
 
 $done({headers: modifiedHeaders});
