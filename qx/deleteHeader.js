@@ -23,7 +23,6 @@ function setHeaderValue(headers, fieldName, value) {
 
 // 获取请求的头部信息
 var modifiedHeaders = $request.headers;
-$notify('test', '', modifiedHeaders);
 
 // 设置或更新 "X-RevenueCat-ETag" 字段的值为一个空字符串
 setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
