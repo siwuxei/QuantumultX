@@ -202,8 +202,6 @@ if ($response && $response.body) {
     var obj = JSON.parse($response.body);
     // 添加提示信息到响应的 body
     obj.Attention = "恭喜你抓到元数据！由墨鱼分享，请勿售卖或分享他人！";
-} else {
-    console.log('No response or response body');
 }
 
 // 定义一些常量
