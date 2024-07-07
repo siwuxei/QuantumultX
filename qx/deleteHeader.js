@@ -23,6 +23,12 @@ function setHeaderValue(headers, fieldName, value) {
 var modifiedHeaders = $request.headers;
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
 
+if (ua.includes("Fiery")) {
+    console.log("User-Agent contains 'Fiery'");
+} else {
+    console.log("User-Agent does not contain 'Fiery'");
+}
+
 console.log(ua);
 setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
 
