@@ -13,7 +13,7 @@ const version = 'V1.0.2';
 
 [rewrite_local]
 # ～ RevenueCat@ddgksf2013
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/siwuxei/QuantumultX/main/qx/revenuecat.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/siwuxei/QuantumultX/main/qx/deleteHeader.js
 
 // ========= 动态ID ========= //
 const mapping = {
