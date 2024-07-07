@@ -29,7 +29,7 @@ var keywords = ["Fileball"];
 // Check if the user-agent does not contain any of the keywords
 if (!keywords.some(keyword => ua.includes(keyword))) {
     setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
+    console.log("DeleteHeader Completion!");
 }
 
-console.log("DeleteHeader Completion!");
 $done({headers: modifiedHeaders});
