@@ -11,9 +11,12 @@
 # > 网易云
 ^https?:\/\/interface(\d)?.music.163.com\/eapi\/ad\/ data-type=text data=" " status-code=200
 
+# > 红版报
+^https?:\/\/fbchina\.flipchina\.cn\/v2\/ad\/query\/ data-type=text data=" " status-code=200
+
 [Script]
 # > 知乎
 zhihu_openads = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/commercial_api.*launch_v2, script-path=https://github.com/ddgksf2013/Scripts/raw/master/zhihu_openads.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% acs.m.taobao.com, guide-acs.m.taobao.com, interface*.music.163.com, api.zhihu.com
+hostname = %APPEND% acs.m.taobao.com, guide-acs.m.taobao.com, interface*.music.163.com, fbchina.flipchina.cn, api.zhihu.com
