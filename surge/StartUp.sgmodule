@@ -1,6 +1,10 @@
 #!name=去开屏广告
 #!desc=去开屏广告
 
+[Url Rewrite]
+# > 讯飞
+^https?+:\/\/imeclient\.openspeech\.cn\/adservice\/ - reject-200
+
 [Map Local]
 # > 阿里巴巴
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ data-type=text data=" " status-code=200
@@ -19,4 +23,4 @@
 zhihu_openads = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/commercial_api.*launch_v2, script-path=https://github.com/ddgksf2013/Scripts/raw/master/zhihu_openads.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% acs.m.taobao.com, guide-acs.m.taobao.com, interface*.music.163.com, fbchina.flipchina.cn, api.zhihu.com
+hostname = %APPEND% acs.m.taobao.com, guide-acs.m.taobao.com, interface*.music.163.com, fbchina.flipchina.cn, api.zhihu.com, imeclient.openspeech.cn
